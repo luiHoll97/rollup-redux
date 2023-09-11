@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+Project Prototype: https://www.figma.com/proto/qo84ZBP0MrmLfFrmkEAmg2/Untitled?node-id=1%3A83&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A83
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Create a Tag Field component for a UI Kit.
 
-## Available Scripts
+- The component has an input field and a button with `Add tag` text. If you type something into the input field and press the `Add tag` button, the current text has to be stored as a tag and the app has to store the tags in Redux store. All the stored tags have to be rendered under the input field, next to each other. If you click on a tag, the app has to delete it from the Redux store.
 
-In the project directory, you can run:
+- The component has to be reuseable.
 
-### `npm start`
+- The reusable component has to be in the `src/components` folder.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The redux files have to be stored in the `src/redux` folder.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- All states have to be managed in Redux.
 
-### `npm test`
+- For the styling, you can use `CSS` or `SASS`, but inline styling is not accepted.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- All styling information is available in Figma.
 
-### `npm run build`
+**_ Only the shared docs are allowed to use during the interview! Google is not allowed! _**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Shared Docs:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- https://react-redux.js.org

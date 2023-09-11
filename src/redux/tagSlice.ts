@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { Tag } from "../types/Tag";
 import { PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "./store";
+import { nanoid } from "@reduxjs/toolkit";
 
 export interface TagState {
   tags: Tag[];
@@ -17,11 +18,11 @@ export const tagSlice = createSlice({
   reducers: {
     addTag: (state, action: PayloadAction<string>) => {
       state.tags.push({
-        id: Math.max(0, Math.max(...state.tags.map(({ id }) => id))) + 1,
+        id: nanoid(),
         text: action.payload,
       });
     },
-    removeTag: (state, action: PayloadAction<number>) => {
+    removeTag: (state, action: PayloadAction<string>) => {
       state.tags = state.tags.filter((tag: Tag) => tag.id !== action.payload);
     },
   },

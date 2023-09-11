@@ -47,7 +47,9 @@ const Dashboard = () => {
             <SingleTag tag={tag} />
           ))}
         </div>
-        {warningMessage && <div className="warning">maximum tags reached (5)</div>}
+        {warningMessage && (
+          <div className="warning">maximum tags reached (5)</div>
+        )}
       </div>
     </>
   );
